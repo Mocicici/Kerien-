@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Love Messages</title>
+  <style>
+    body {
+      background-color: pink;
+      text-align: center;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+    }
+    .option {
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid black;
+      display: inline-block;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="option" id="option1">Kerien</div>
+  <div class="option" id="option2">Kelly</div>
+  <div class="option" id="option3">Langga</div>
+  <div class="option" id="option4">Bingbing</div>
+  <div class="option" id="option5">Mahal ko</div>
+
+  <p id="loveMessage">CHOOSE YOUR NICKNAME BABY KO</p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var loveMessage = document.getElementById("loveMessage");
+
+      function updateMessage(message) {
+        loveMessage.textContent = message;
+      }
+
+      document.getElementById("option1").addEventListener("click", function() {
+        updateMessage("Hi Kerien ko, Wishing us the best mahal ko! Very proud ako sayo Kerien kase ang sipag sipag mo di ka napapanatag sa mababa lang na grades you want more and I love that side of you na may ambition ang cute, loveable at nakakaproud ay ewan HAHAHAHA ang galing galing mooooo. Know that ano man maging results ng hardships mo Kerien, I'm here your #1 fan very proud sayo at nakita ang efforts na binibigay mo");
+      });
+
+      document.getElementById("option2").addEventListener("click", function() {
+        updateMessage("Kelly kooo, Salamat sa 2nd chance. Di ko alam gano kasakit nagawa ko sayo noon and still tinanggap mo ulet ako. Super happy ko, ngayooooon 3 months na tayo. Tuloy tuloy na naten toh langga mahal na mahal kitaa super. Sobrang saya ko kase bumalik kana sa buhay ko");
+      });
+
+      document.getElementById("option3").addEventListener("click", function() {
+        updateMessage("Langga ko I miss you, Busy na tayo almost all the time sa studies pero kaya nateeen toh ka stress noh FIGHTINGGGG!! Let's be there for each other kapag need naten ang isat isa ma busy man let's make it up after mwamwa mahal na mahal kitaaa");
+      });
+
+      document.getElementById("option4").addEventListener("click", function() {
+        updateMessage("HIIII BINGBING HAHAHA, Ganda mo paden inlove ako sayo mapa noon man o ngayon. Ewan ko ba mapa school bahay kung san man ikaw naiisip ko. Bingbing you're pretty ha wag mo hayaan ma down ka ng iba. I love your eyes, cheeks, lips, nose and your ears IHHHH everything is shining sayo eh HAAHAHHA I LOVE YOUUU");
+      });
+
+      document.getElementById("option5").addEventListener("click", function() {
+        updateMessage("Mahal koooo, Shana po more laplap to come din hihihiihi HAHAHAHA ok yun lang corny na I LOVE YOUUUUUUUUU MAHAL KOO");
+      });
+    });
+  </script>
+</body>
+</html>
